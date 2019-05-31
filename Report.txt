@@ -1,0 +1,17 @@
+Name: Moughees Ahmed
+Roll No: 20100093
+
+The entire process is done in the 'main' function.
+It reads the data, both test and train.
+'stripoutcome' strips the labels of each data point.
+'classifierprob' calculates the frequency of 1's and 0's.
+'testprobC' returns 4 lists:
+1. Probability of test = 1 given classifier is 1.
+2. Probability of test = 1 given classifier is 0.
+3. Probability of test = 0 given classifier is 1.
+4. Probability of test = 1 given classifier is 0.
+Data is trained at this point.
+'testfunction' calculates accuracy on the test data.
+It traverses across each set of test data and checks if that particular test is 1 or 0 and multiplies it with the respective variable.
+At the end of loop, there's an if condition which classifies every 1 and 0.
+To improve accuracy, I have added Laplace smoothing and submitted it in a seperate file.
